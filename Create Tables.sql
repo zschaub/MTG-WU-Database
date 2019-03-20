@@ -50,8 +50,8 @@ Constraint cardset_fk Foreign Key (set_name) References t_cardset(set_name)
 
 Create Table t_banned_cards(
 banned_id int not null,
-format_name varchar(20) not null,
-card_name varchar(20) not null,
+format_name varchar(42) not null,
+card_name varchar(42) not null,
 Constraint banned_pk Primary Key (banned_id),
 Constraint format_fk Foreign Key (format_name) references t_format(format_name),
 Constraint card_fk foreign key (card_name) references t_card(card_name)
@@ -140,8 +140,8 @@ Constraint format_fk foreign key (format_name) references t_format(format_name)
 );
 
 Create Table t_set_format(
-set_name varchar(20) not null,
-format_name varchar(20) not null,
+set_name varchar(42) not null,
+format_name varchar(42) not null,
 Constraint sf_pk Primary Key (set_name, format_name),
 Constraint set_fk foreign key (set_name) references t_set(set_name),
 Constraint format_fk foreign key (format_name) references t_format(format_name)

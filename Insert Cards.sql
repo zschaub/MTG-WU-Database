@@ -161,3 +161,5 @@ INSERT INTO t_card VALUES ('Assassin\'s Trophy', 'Multicolored - Black Green', '
 INSERT INTO t_card VALUES ('Plaguecrafter', 'Black', 'Creature - Human Shamen', 'Guilds of Ravnica');
 INSERT INTO t_card VALUES ('Unmoored Ego', 'Multicolored - Blue Black', 'Sorcery', 'Guilds of Ravnica');
 INSERT INTO t_card VALUES ('Basilica Bell-Haunt', 'Multicolored - White Black', 'Creature - Spirit', 'Ravnica Allegiance');
+INSERT INTO t_card VALUES ('Rampaging Ferocidon', 'Red', 'Creature - Dinosaur', 'Ixalan');
+INSERT INTO t_banned_cards VALUES (0, 'Standard', 'Rampaging Ferocidon')
