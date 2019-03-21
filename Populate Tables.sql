@@ -1,9 +1,61 @@
-# t_card
+# t_tournament
+INSERT INTO t_tournament VALUES ('Sample Tournament', DATE '2019-03-18', 'Boston', 'MA', 'USA');
+INSERT INTO t_tournament VALUES ('2019 Mythic Championship', DATE '2019-02-24', 'Cleveland', 'OH', 'USA');
 
+# t_player
+insert into t_player values('John Wheeler', 'TAG');
+insert into t_player values('Cassius Marsh', 'San Francisco 49ers');
+insert into t_player values('Jeff Hoogland', 'Tempo Storm');
+insert into t_player values('Kenji Egashira', 'Team Solo Mid');
+insert into t_player values('Kleanthis Zymaris', 'TAG');
+insert into t_player values('Luis Scott-Vargas', 'Channel Fireball');
+insert into t_player values('Autumn Burchett',null);
+insert into t_player values('Reid Duke', 'Channel Fireball');
+insert into t_player values('Marcio Carvalho',null);
+insert into t_player values('Yoshihiko Ikawa',null);
+insert into t_player values('Michael Bonde', 'Snapcardster');
+insert into t_player values('Julien Berteaux',null);
+insert into t_player values('Alex Majlaton',null);
+
+#t_deck
+INSERT INTO t_deck VALUES (8, 'Azorius Aggro', 75);
+INSERT INTO t_deck VALUES (9, 'Mono-Blue Tempo', 75);
+INSERT INTO t_deck VALUES (10, 'Esper Control', 75);
+INSERT INTO t_deck VALUES (11, 'Simic Nexus', 75);
+INSERT INTO t_deck VALUES (12, 'Mono-Blue Tempo', 75);
+INSERT INTO t_deck VALUES (13, 'Gruul Aggro', 75);
+INSERT INTO t_deck VALUES (14, 'Izzet Phoenix', 75);
+insert into t_deck values('0', 'Simic Nexus', '75');
+insert into t_deck values('1', 'Mono W Aggro', '75');
+insert into t_deck values('2', '4C Gates', '75');
+insert into t_deck values('3', 'Selesnya Tokens', '75');
+insert into t_deck values('4', 'Mono Red Aggro', '75');
+insert into t_deck values('5', 'Sultai', '75');
+insert into t_deck values('6', 'Mono-Blue Tempo', '75');
+insert into t_deck values('7', 'Esper Control', '75');
+
+# t_format
+insert into t_format values('Standard', 1);
+insert into t_format values('Modern', 1);
+insert into t_format values('Legacy', 1);
+insert into t_format values('Vintage', 1);
+insert into t_format values('Commander', 1);
+insert into t_format values('Sealed', 0);
+insert into t_format values('Draft', 0);
+
+# t_set
+INSERT INTO t_set VALUES ('Ixalan', DATE '2017-09-29', '289', 'XLN');
+INSERT INTO t_set VALUES ('Rivals of Ixalan', DATE '2018-01-19', '205', 'RIX');
+INSERT INTO t_set VALUES ('Dominaria', DATE '2018-04-27', '280', 'DOM');
+INSERT INTO t_set VALUES ('Core Set 2019', DATE '2018-07-13', '314', 'M19');
+INSERT INTO t_set VALUES ('Guilds of Ravnica', DATE '2018-10-05', '273', 'GRN');
+INSERT INTO t_set VALUES ('Ravnica Allegiance', DATE '2019-07-25', '273', 'RNA');
+
+# t_card
 INSERT INTO t_card VALUES ('Ajani, Adversary of Tyrants', 'White', 'Legendary Planeswalker - Ajani', 'Core Set 2019');
 INSERT INTO t_card VALUES ('Benalish Marshal', 'White', 'Creature - Human Knight', 'Dominaria');
 INSERT INTO t_card VALUES ('Dauntless Bodyguard', 'White', 'Creature - Human Knight', 'Dominaria');
-INSERT INTO t_card VALUES ('Skymarch Aspirant', 'White', 'Creature - Vampire Soldier', 'Rivals of Ixalan');
+INSERT INTO t_card VALUES ('Skymarcher Aspirant', 'White', 'Creature - Vampire Soldier', 'Rivals of Ixalan');
 INSERT INTO t_card VALUES ('Snubhorn Sentry', 'White', 'Creature - Dinosaur', 'Rivals of Ixalan');
 INSERT INTO t_card VALUES ('Tithe Taker', 'White', 'Creature - Human Soldier', 'Ravnica Allegiance');
 INSERT INTO t_card VALUES ('Venerated Loxodon', 'White', 'Creature - Elephant Cleric', 'Guilds of Ravnica');
@@ -32,7 +84,7 @@ INSERT INTO t_card VALUES ('Opt', 'Blue', 'Instant', 'Dominaria');
 INSERT INTO t_card VALUES ('Wizard\'s Retort', 'Blue', 'Instant', 'Dominaria');
 INSERT INTO t_card VALUES ('Curious Obsession', 'Blue', 'Enchantment - Aura', 'Rivals of Ixalan');
 INSERT INTO t_card VALUES ('Entrancing Melody', 'Blue', 'Sorcery', 'Ixalan');
-INSERT INTO t_card VALUES ('Exlusion Mage', 'Blue', 'Creature - Human Wizard', 'Core Set 2019');
+INSERT INTO t_card VALUES ('Exclusion Mage', 'Blue', 'Creature - Human Wizard', 'Core Set 2019');
 INSERT INTO t_card VALUES ('Surge Mare', 'Blue', 'Creature - Horse Fish', 'Core Set 2019');
 INSERT INTO t_card VALUES ('Transmogrifying Wand', 'Colorless', 'Artifact', 'Core Set 2019');
 INSERT INTO t_card VALUES ('Deep Freeze', 'Blue', 'Enchantment Aura', 'Dominaria');
@@ -114,7 +166,7 @@ INSERT INTO t_card VALUES ('Blood Crypt', 'Colorless', 'Land - Swamp Mountain', 
 INSERT INTO t_card VALUES ('Sorcerous Spyglass', 'Colorless', 'Artifact', 'Ixalan');
 INSERT INTO t_card VALUES ('Niv-Mizzet, Parun', 'Multicolored - Blue Red', 'Legendary Creature - Dragon Wizard', 'Guilds of Ravnica');
 INSERT INTO t_card VALUES ('Murmuring Mystic', 'Blue', 'Creature - Human Wizard', 'Guilds of Ravnica');
-INSERT INTO t_card VALUES ('Shivan Fire', 'Red', 'Instant', 'Instant');
+INSERT INTO t_card VALUES ('Shivan Fire', 'Red', 'Instant', 'Dominaria');
 INSERT INTO t_card VALUES ('Evolving Wilds', 'Colorless', 'Land', 'Rivals of Ixalan');
 INSERT INTO t_card VALUES ('Hunted Witness', 'White', 'Creature - Human', 'Guilds of Ravnica');
 INSERT INTO t_card VALUES ('Demystify', 'White', 'Instant', 'Ixalan');
@@ -167,13 +219,46 @@ INSERT INTO t_card VALUES ('Rampaging Ferocidon', 'Red', 'Creature - Dinosaur', 
 INSERT INTO t_card VALUES ('Pteramander', 'Blue', 'Creature - Salamander Drake', 'Ravnica Allegiance');
 
 #_banned_cards
-INSERT INTO t_banned_cards VALUES (0, 'Standard', 'Rampaging Ferocidon')
+INSERT INTO t_banned_cards VALUES (0, 'Standard', 'Rampaging Ferocidon');
+
+# t_match 
+INSERT INTO t_match VALUES (111, 1, '3-1', 'Luis Scott-Vargas', '2019 Mythic Championship');
+INSERT INTO t_match VALUES (112, 1, '3-2', 'Yoshihiko Ikawa', '2019 Mythic Championship');
+INSERT INTO t_match VALUES (113, 1, '3-1', 'Autumn Burchett', '2019 Mythic Championship');
+INSERT INTO t_match VALUES (114, 1, '3-2', 'Reid Duke', '2019 Mythic Championship');
+INSERT INTO t_match VALUES (121, 2, '3-1', 'Yoshihiko Ikawa', '2019 Mythic Championship');
+INSERT INTO t_match VALUES (122, 2, '3-1', 'Autumn Burchett', '2019 Mythic Championship');
+INSERT INTO t_match VALUES (131, 3, '3-2', 'Autumn Burchett', '2019 Mythic Championship');
+/*Round One*/
+insert into t_match values(11, 1, '3-1', 'John Wheeler', 'Sample Tournament');
+insert into t_match values(12, 1, '3-0', 'Reid Duke', 'Sample Tournament');
+insert into t_match values(13, 1, '3-2', 'Kleanthis Zymaris', 'Sample Tournament');
+insert into t_match values(14, 1, '3-1', 'Jeff Hoogland', 'Sample Tournament');
+/*Losers One*/
+insert into t_match values(15, 2, '3-1', 'Autumn Burchett', 'Sample Tournament');
+insert into t_match values(16, 2, '3-0', 'Reid Duke', 'Sample Tournament');
+/*Round Two*/
+insert into t_match values(21, 2, '3-1', 'John Wheeler', 'Sample Tournament');
+insert into t_match values(22, 2, '3-0', 'Jeff Hoogland', 'Sample Tournament');
+/*Losers Two*/
+insert into t_match values(23, 3, '3-1', 'Kleanthis Zymaris', 'Sample Tournament');
+insert into t_match values(24, 2, '3-1', 'Autumn Burchett', 'Sample Tournament');
+/*Semis*/
+insert into t_match values(31, 3, '3-2', 'Jeff Hoogland', 'Sample Tournament');
+/*Losers Three*/
+insert into t_match values(32, 3, '3-2', 'Reid Duke', 'Sample Tournament');
+/*Losers Four*/
+insert into t_match values(41, 4, '3-0', 'John Wheeler', 'Sample Tournament');
+/*Finals*/
+insert into t_match values(51, 5, '3-2', 'John Wheeler', 'Sample Tournament');
+/*Finals 2*/
+insert into t_match values(61, 3, '3-1', 'Jeff Hoogland', 'Sample Tournament');
 
 # t_card_format
 INSERT INTO t_card_format VALUES ('Ajani, Adversary of Tyrants', 'Standard');
 INSERT INTO t_card_format VALUES ('Benalish Marshal', 'Standard');
 INSERT INTO t_card_format VALUES ('Dauntless Bodyguard', 'Standard');
-INSERT INTO t_card_format VALUES ('Skymarch Aspirant', 'Standard');
+INSERT INTO t_card_format VALUES ('Skymarcher Aspirant', 'Standard');
 INSERT INTO t_card_format VALUES ('Snubhorn Sentry', 'Standard');
 INSERT INTO t_card_format VALUES ('Tithe Taker', 'Standard');
 INSERT INTO t_card_format VALUES ('Venerated Loxodon', 'Standard');
@@ -202,7 +287,7 @@ INSERT INTO t_card_format VALUES ('Opt', 'Standard');
 INSERT INTO t_card_format VALUES ('Wizard\'s Retort', 'Standard');
 INSERT INTO t_card_format VALUES ('Curious Obsession', 'Standard');
 INSERT INTO t_card_format VALUES ('Entrancing Melody', 'Standard');
-INSERT INTO t_card_format VALUES ('Exlusion Mage', 'Standard');
+INSERT INTO t_card_format VALUES ('Exclusion Mage', 'Standard');
 INSERT INTO t_card_format VALUES ('Surge Mare', 'Standard');
 INSERT INTO t_card_format VALUES ('Transmogrifying Wand', 'Standard');
 INSERT INTO t_card_format VALUES ('Deep Freeze', 'Standard');
@@ -335,14 +420,6 @@ INSERT INTO t_card_format VALUES ('Unmoored Ego', 'Standard');
 INSERT INTO t_card_format VALUES ('Basilica Bell-Haunt', 'Standard');
 INSERT INTO t_card_format VALUES ('Pteramander', 'Standard');
 
-# t_sets
-INSERT INTO t_set VALUES ('Ixalan', DATE '2017-09-29', '289', 'XLN');
-INSERT INTO t_set VALUES ('Rivals of Ixalan', DATE '2018-01-19', '205', 'RIX');
-INSERT INTO t_set VALUES ('Dominaria', DATE '2018-04-27', '280', 'DOM');
-INSERT INTO t_set VALUES ('Core Set 2019', DATE '2018-07-13', '314', 'M19');
-INSERT INTO t_set VALUES ('Guilds of Ravnica', DATE '2018-10-05', '273', 'GRN');
-INSERT INTO t_set VALUES ('Ravnica Allegiance', DATE '2019-07-25', '273', 'RNA');
-
 #t_set_format
 INSERT INTO t_set_format VALUES ('Ixalan', 'Standard');
 INSERT INTO t_set_format VALUES ('Rivals of Ixalan', 'Standard');
@@ -351,30 +428,12 @@ INSERT INTO t_set_format VALUES ('Core Set 2019', 'Standard');
 INSERT INTO t_set_format VALUES ('Guilds of Ravnica', 'Standard');
 INSERT INTO t_set_format VALUES ('Ravnica Allegiance', 'Standard');
 
-#t_deck
-INSERT INTO t_deck VALUES (8, 'Azorius Aggro', 75);
-INSERT INTO t_deck VALUES (9, 'Mono-Blue Tempo', 75);
-INSERT INTO t_deck VALUES (10, 'Esper Control', 75);
-INSERT INTO t_deck VALUES (11, 'Simic Nexus', 75);
-INSERT INTO t_deck VALUES (12, 'Mono-Blue Tempo', 75);
-INSERT INTO t_deck VALUES (13, 'Gruul Aggro', 75);
-INSERT INTO t_deck VALUES (14, 'Izzet Phoenix', 75);
-insert into t_deck values('0', 'Simic Nexus', '75');
-insert into t_deck values('1', 'Mono W Aggro', '75');
-insert into t_deck values('2', '4C Gates', '75');
-insert into t_deck values('3', 'Selesnya Tokens', '75');
-insert into t_deck values('4', 'Mono Red Aggro', '75');
-insert into t_deck values('5', 'Sultai', '75');
-insert into t_deck values('6', 'Mono-Blue Tempo', '75');
-insert into t_deck values('7', 'Esper Control', '75');
-
-
 #t_deck_card
 # 8 Azorius Aggro
 INSERT INTO t_deck_card VALUES (8, 3, 'Ajani, Adversary of Tyrants');
 INSERT INTO t_deck_card VALUES (8, 4, 'Benalish Marshal');
 INSERT INTO t_deck_card VALUES (8, 4, 'Dauntless Bodyguard');
-INSERT INTO t_deck_card VALUES (8, 4, 'Skymarch Aspirant');
+INSERT INTO t_deck_card VALUES (8, 4, 'Skymarcher Aspirant');
 INSERT INTO t_deck_card VALUES (8, 4, 'Snubhorn Sentry');
 INSERT INTO t_deck_card VALUES (8, 4, 'Tithe Taker');
 INSERT INTO t_deck_card VALUES (8, 4, 'Venerated Loxodon');
@@ -730,43 +789,6 @@ insert into t_deck_card values(7, 1, 'The Eldest Reborn');
 insert into t_deck_card values(7, 3, 'Thief of Sanity');
 insert into t_deck_card values(7, 2, 'Unmoored Ego');
 
-# t_tournament
-INSERT INTO t_tournament VALUES ('Sample Tournament', DATE '2019-03-18', 'Boston', 'MA', 'USA');
-INSERT INTO t_tournament VALUES ('2019 Mythic Championship', DATE '2019-02-24', 'Cleveland', 'OH', 'USA');
-
-# t_match 
-INSERT INTO t_match VALUES (111, 1, '3-1', 'Luis Scott-Vargas', '2019 Mythic Championship');
-INSERT INTO t_match VALUES (112, 1, '3-2', 'Yoshihiko Ikawa', '2019 Mythic Championship');
-INSERT INTO t_match VALUES (113, 1, '3-1', 'Autumn Burchett', '2019 Mythic Championship');
-INSERT INTO t_match VALUES (114, 1, '3-2', 'Reid Duke', '2019 Mythic Championship');
-INSERT INTO t_match VALUES (121, 2, '3-1', 'Yoshihiko Ikawa', '2019 Mythic Championship');
-INSERT INTO t_match VALUES (122, 2, '3-1', 'Autumn Burchett', '2019 Mythic Championship');
-INSERT INTO t_match VALUES (131, 3, '3-2', 'Autumn Burchett', '2019 Mythic Championship');
-/*Round One*/
-insert into t_match values(11, 1, '3-1', 'John Wheeler', 'Sample Tournament');
-insert into t_match values(12, 1, '3-0', 'Reid Duke', 'Sample Tournament');
-insert into t_match values(13, 1, '3-2', 'Kleanthis Zymaris', 'Sample Tournament');
-insert into t_match values(14, 1, '3-1', 'Jeff Hoogland', 'Sample Tournament');
-/*Losers One*/
-insert into t_match values(15, 2, '3-1', 'Autumn Burchett', 'Sample Tournament');
-insert into t_match values(16, 2, '3-0', 'Reid Duke', 'Sample Tournament');
-/*Round Two*/
-insert into t_match values(21, 2, '3-1', 'John Wheeler', 'Sample Tournament');
-insert into t_match values(22, 2, '3-0', 'Jeff Hoogland', 'Sample Tournament');
-/*Losers Two*/
-insert into t_match values(23, 3, '3-1', 'Kleanthis Zymaris', 'Sample Tournament');
-insert into t_match values(24, 2, '3-1', 'Autumn Burchett', 'Sample Tournament');
-/*Semis*/
-insert into t_match values(31, 3, '3-2', 'Jeff Hoogland', 'Sample Tournament');
-/*Losers Three*/
-insert into t_match values(32, 3, '3-2', 'Reid Duke', 'Sample Tournament');
-/*Losers Four*/
-insert into t_match values(41, 4, '3-0', 'John Wheeler', 'Sample Tournament');
-/*Finals*/
-insert into t_match values(51, 5, '3-2', 'John Wheeler', 'Sample Tournament');
-/*Finals 2*/
-insert into t_match values(61, 3, '3-1', 'Jeff Hoogland', 'Sample Tournament');
-
 # t_player_match
 INSERT INTO t_player_match VALUES ('Marcio Carvalho', 111);
 INSERT INTO t_player_match VALUES ('Luis Scott-Vargas', 111);
@@ -869,30 +891,6 @@ INSERT INTO t_tournament_player VALUES ('2019 Mythic Championship', 'Autumn Burc
 INSERT INTO t_tournament_player VALUES ('2019 Mythic Championship', 'Julien Berteaux', 0, 1, 1, 3);
 INSERT INTO t_tournament_player VALUES ('2019 Mythic Championship', 'Reid Duke', 1, 1, 4, 5);
 INSERT INTO t_tournament_player VALUES ('2019 Mythic Championship', 'Alex Majlaton', 0, 1, 2, 3);
-
-# t_format
-insert into t_format values ('Standard', 1);
-insert into t_format values('Modern', 1);
-insert into t_format values('Legacy', 1);
-insert into t_format values('Vintage', 1);
-insert into t_format values('Commander', 1);
-insert into t_format values('Sealed', 0);
-insert into t_format values('Draft', 0);
-
-# t_player
-insert into t_player values('John Wheeler', 'TAG');
-insert into t_player values('Cassius Marsh', 'San Francisco 49ers');
-insert into t_player values('Jeff Hoogland', 'Tempo Storm');
-insert into t_player values('Kenji Egashira', 'Team Solo Mid');
-insert into t_player values('Kleanthis Zymaris', 'TAG');
-insert into t_player values('Luis Scott-Vargas', 'Channel Fireball');
-insert into t_player values('Autumn Burchett');
-insert into t_player values('Reid Duke', 'Channel Fireball');
-insert into t_player values('Marcio Carvalho',null);
-insert into t_player values('Yoshihiko Ikawa',null);
-insert into t_player values('Michael Bonde', 'Snapcardster');
-insert into t_player values('Julien Berteaux',null);
-insert into t_player values('Alex Majlaton',null);
 
 # t_player_deck
 insert into t_player_deck values('John Wheeler', 0);
