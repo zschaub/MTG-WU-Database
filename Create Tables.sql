@@ -69,6 +69,7 @@ Constraint tournament_fk Foreign Key (tournament_name) References t_tournament(t
 
 Create Table t_player(
 player_name varchar(20) not null,
+team varchar(30) Default(Null),
 Constraint player_pk Primary Key (player_name)
 );
 
