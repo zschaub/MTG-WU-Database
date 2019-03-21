@@ -69,10 +69,6 @@ Constraint tournament_fk Foreign Key (tournament_name) References t_tournament(t
 
 Create Table t_player(
 player_name varchar(20) not null,
-match_wins int not null,
-match_losses int not null,
-game_wins int not null,
-game_losses int not null,
 Constraint player_pk Primary Key (player_name)
 );
 
@@ -94,6 +90,10 @@ Constraint format_fk foreign key (format_name) references t_format(format_name)
 Create Table t_tournament_player(
 tournament_name varchar(20) not null,
 player_name varchar(20) not null,
+match_wins int not null,
+match_losses int not null,
+game_wins int not null,
+game_losses int not null,
 Constraint tp_pk Primary Key (tournament_name, player_name),
 Constraint tournament_fk foreign key (tournament_name) references t_tournament(tournament_name),
 Constraint player_fk foreign key (player_name) references t_player(player_name)
