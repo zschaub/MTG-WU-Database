@@ -359,6 +359,15 @@ INSERT INTO t_deck VALUES (11, 'Simic Nexus', 75);
 INSERT INTO t_deck VALUES (12, 'Mono-Blue Tempo', 75);
 INSERT INTO t_deck VALUES (13, 'Gruul Aggro', 75);
 INSERT INTO t_deck VALUES (14, 'Izzet Phoenix', 75);
+insert into t_deck values('0', 'Simic Nexus', '75');
+insert into t_deck values('1', 'Mono W Aggro', '75');
+insert into t_deck values('2', '4C Gates', '75');
+insert into t_deck values('3', 'Selesnya Tokens', '75');
+insert into t_deck values('4', 'Mono Red Aggro', '75');
+insert into t_deck values('5', 'Sultai', '75');
+insert into t_deck values('6', 'Mono-Blue Tempo', '75');
+insert into t_deck values('7', 'Esper Control', '75');
+
 
 #t_deck_card
 # 8 Azorius Aggro
@@ -531,12 +540,201 @@ INSERT INTO t_deck_card VALUES (14, 1, 'Shivan Fire');
 INSERT INTO t_deck_card VALUES (14, 3, 'Negate');
 INSERT INTO t_deck_card VALUES (14, 1, 'Disdainful Stroke');
 
+insert into t_deck_card values(0, 3, 'Blink of an Eye');
+insert into t_deck_card values(0, 4, 'Breeding Pool');
+insert into t_deck_card values(0, 4, 'Chemister\'s Insight');
+insert into t_deck_card values(0, 1, 'Evolving Wilds');
+insert into t_deck_card values(0, 7, 'Forest');
+insert into t_deck_card values(0, 4, 'Growth Spiral');
+insert into t_deck_card values(0, 4, 'Hinterland Harbor');
+insert into t_deck_card values(0, 4, 'Hydroid Krasis');
+insert into t_deck_card values(0, 5, 'Island');
+insert into t_deck_card values(0, 4, 'Memorial to Genius');
+insert into t_deck_card values(0, 4, 'Nexus of Fate');
+insert into t_deck_card values(0, 3, 'Opt');
+insert into t_deck_card values(0, 4, 'Root Snare');
+insert into t_deck_card values(0, 3, 'Search for Azcanta');
+insert into t_deck_card values(0, 3, 'Sinister Sabotage');
+insert into t_deck_card values(0, 4, 'Wilderness Reclamation');
+insert into t_deck_card values(0, 2, 'Atzocan Archer');
+insert into t_deck_card values(0, 2, 'Biogenic Ooze');
+insert into t_deck_card values(0, 2, 'Crushing Canopy');
+insert into t_deck_card values(0, 4, 'Druid of the Cowl');
+insert into t_deck_card values(0, 1, 'Kraul Harpooner');
+insert into t_deck_card values(0, 3, 'Negate');
+
+insert into t_deck_card values(1, 4, 'Adanto Vanguard');
+insert into t_deck_card values(1, 4, 'Baffling End');
+insert into t_deck_card values(1, 4, 'Benalish Marshal');
+insert into t_deck_card values(1, 4, 'Conclave Tribunal');
+insert into t_deck_card values(1, 3, 'Dauntless Bodyguard');
+insert into t_deck_card values(1, 4, 'History of Benalia');
+insert into t_deck_card values(1, 1, 'Hunted Witness');
+insert into t_deck_card values(1, 4, 'Legion\'s Landing');
+insert into t_deck_card values(1, 20, 'Plains');
+insert into t_deck_card values(1, 4, 'Skymarcher Aspirant');
+insert into t_deck_card values(1, 4, 'Snubhorn Sentry');
+insert into t_deck_card values(1, 3, 'Tithe Taker');
+insert into t_deck_card values(1, 1, 'Unbreakable Formation');
+insert into t_deck_card values(1, 4, 'Venerated Loxodon');
+insert into t_deck_card values(1, 4, 'Ajani, Adversary of Tyrants');
+insert into t_deck_card values(1, 3, 'Demystify');
+insert into t_deck_card values(1, 4, 'Tocatli Honor Guard');
+
+insert into t_deck_card values(2, 4, 'Azorius Guildgate');
+insert into t_deck_card values(2, 2, 'Banefire');
+insert into t_deck_card values(2, 1, 'Breeding Pool');
+insert into t_deck_card values(2, 4, 'Circuitous Route');
+insert into t_deck_card values(2, 3, 'Deafening Clarion');
+insert into t_deck_card values(2, 1, 'Forest');
+insert into t_deck_card values(2, 4, 'Gate Colossus');
+insert into t_deck_card values(2, 4, 'Gatebreaker Ram');
+insert into t_deck_card values(2, 4, 'Gates Ablaze');
+insert into t_deck_card values(2, 2, 'Gateway Plaza');
+insert into t_deck_card values(2, 4, 'Growth Spiral');
+insert into t_deck_card values(2, 4, 'Gruul Guildgate');
+insert into t_deck_card values(2, 4, 'Guild Summit');
+insert into t_deck_card values(2, 4, 'Hydroid Krasis');
+insert into t_deck_card values(2, 4, 'Izzet Guildgate');
+insert into t_deck_card values(2, 4, 'Plaza of Harmony');
+insert into t_deck_card values(2, 2, 'Selesnya Guildgate');
+insert into t_deck_card values(2, 4, 'Simic Guildgate');
+insert into t_deck_card values(2, 2, 'Stomping Ground');
+insert into t_deck_card values(2, 2, 'Crushing Canopy');
+insert into t_deck_card values(2, 2, 'Lava Coil');
+insert into t_deck_card values(2, 2, 'Mass Manipulation');
+insert into t_deck_card values(2, 4, 'Negate');
+insert into t_deck_card values(2, 2, 'Nezahal, Primal Tide');
+insert into t_deck_card values(2, 2, 'Shivan Fire');
+
+insert into t_deck_card values(3, 4, 'Conclave Tribunal');
+insert into t_deck_card values(3, 3, 'Emmara, Soul of the Accord');
+insert into t_deck_card values(3, 4, 'Flower // Flourish');
+insert into t_deck_card values(3, 4, 'Forest');
+insert into t_deck_card values(3, 4, 'History of Benalia');
+insert into t_deck_card values(3, 2, 'Huatli, Radiant Champion');
+insert into t_deck_card values(3, 1, 'Incubation Druid');
+insert into t_deck_card values(3, 3, 'Legion\'s Landing');
+insert into t_deck_card values(3, 4, 'March of the Multitudes');
+insert into t_deck_card values(3, 9, 'Plains');
+insert into t_deck_card values(3, 4, 'Saproling Migration');
+insert into t_deck_card values(3, 4, 'Sunpetal Grove');
+insert into t_deck_card values(3, 4, 'Temple Garden');
+insert into t_deck_card values(3, 3, 'Tithe Taker');
+insert into t_deck_card values(3, 3, 'Trostani Discordant');
+insert into t_deck_card values(3, 4, 'Venerated Loxodon');
+insert into t_deck_card values(3, 2, 'Ajani, Adversary of Tyrants');
+insert into t_deck_card values(3, 3, 'Baffling End');
+insert into t_deck_card values(3, 1, 'Crushing Canopy');
+insert into t_deck_card values(3, 1, 'Demystify');
+insert into t_deck_card values(3, 3, 'Knight of Autumn');
+insert into t_deck_card values(3, 4, 'Kraul Harpooner');
+insert into t_deck_card values(3, 1, 'Vivien Reid');
+
+insert into t_deck_card values(4, 4, 'Experimental Frenzy');
+insert into t_deck_card values(4, 4, 'Fanatical Firebrand');
+insert into t_deck_card values(4, 4, 'Ghitu Lavarunner');
+insert into t_deck_card values(4, 4, 'Goblin Chainwhirler');
+insert into t_deck_card values(4, 4, 'Light Up the Stage');
+insert into t_deck_card values(4, 4, 'Lightning Strike');
+insert into t_deck_card values(4, 13, 'Mountain');
+insert into t_deck_card values(4, 4, 'Rootbound Crag');
+insert into t_deck_card values(4, 4, 'Runaway Steam-Kin');
+insert into t_deck_card values(4, 4, 'Shock');
+insert into t_deck_card values(4, 4, 'Stomping Ground');
+insert into t_deck_card values(4, 4, 'Viashino Pyromancer');
+insert into t_deck_card values(4, 4, 'Wizard\'s Lightning');
+insert into t_deck_card values(4, 4, 'Cindervines');
+insert into t_deck_card values(4, 3, 'Collision // Colossus');
+insert into t_deck_card values(4, 1, 'Dire Fleet Daredevil');
+insert into t_deck_card values(4, 4, 'Lava Coil');
+insert into t_deck_card values(4, 2, 'Treasure Map');
+
+insert into t_deck_card values(5, 4, 'Breeding Pool');
+insert into t_deck_card values(5, 3, 'Carnage Tyrant');
+insert into t_deck_card values(5, 3, 'Cast Down');
+insert into t_deck_card values(5, 1, 'Drowned Catacomb');
+insert into t_deck_card values(5, 2, 'Find // Finality');
+insert into t_deck_card values(5, 4, 'Forest');
+insert into t_deck_card values(5, 1, 'Hostage Taker');
+insert into t_deck_card values(5, 3, 'Hydroid Krasis');
+insert into t_deck_card values(5, 2, 'Incubation Druid');
+insert into t_deck_card values(5, 4, 'Jadelight Ranger');
+insert into t_deck_card values(5, 4, 'Llanowar Elves');
+insert into t_deck_card values(5, 1, 'Memorial to Folly');
+insert into t_deck_card values(5, 4, 'Merfolk Branchwalker');
+insert into t_deck_card values(5, 4, 'Overgrown Tomb');
+insert into t_deck_card values(5, 1, 'Ravenous Chupacabra');
+insert into t_deck_card values(5, 2, 'Swamp');
+insert into t_deck_card values(5, 2, 'Vivien Reid');
+insert into t_deck_card values(5, 2, 'Vraska\'s Contempt');
+insert into t_deck_card values(5, 1, 'Vraska, Relic Seeker');
+insert into t_deck_card values(5, 4, 'Watery Grave');
+insert into t_deck_card values(5, 4, 'Wildgrowth Walker');
+insert into t_deck_card values(5, 4, 'Woodland Cemetery');
+insert into t_deck_card values(5, 1, 'Assassin\'s Trophy');
+insert into t_deck_card values(5, 1, 'Crushing Canopy');
+insert into t_deck_card values(5, 2, 'Cry of the Carnarium');
+insert into t_deck_card values(5, 1, 'Disdainful Stroke');
+insert into t_deck_card values(5, 4, 'Duress');
+insert into t_deck_card values(5, 2, 'Kraul Harpooner');
+insert into t_deck_card values(5, 2, 'Negate');
+insert into t_deck_card values(5, 2, 'Plaguecrafter');
+
+insert into t_deck_card values(6, 4, 'Siren Stormtamer');
+insert into t_deck_card values(6, 4, 'Pteramander');
+insert into t_deck_card values(6, 1, 'Mist-Cloaked Herald');
+insert into t_deck_card values(6, 4, 'Merfolk Trickster');
+insert into t_deck_card values(6, 4, 'Tempest Djinn');
+insert into t_deck_card values(6, 1, 'Chart a Course');
+insert into t_deck_card values(6, 4, 'Entrancing Melody');
+insert into t_deck_card values(6, 4, 'Opt');
+insert into t_deck_card values(6, 4, 'Dive Down');
+insert into t_deck_card values(6, 3, 'Spell Pierce');
+insert into t_deck_card values(6, 3, 'Essence Capture');
+insert into t_deck_card values(6, 4, 'Negate');
+insert into t_deck_card values(6, 4, 'Wizard\'s Retort');
+insert into t_deck_card values(6, 4, 'Curious Obsession');
+insert into t_deck_card values(6, 20, 'Island');
+insert into t_deck_card values(6, 1, 'Disdainful Stroke');
+insert into t_deck_card values(6, 3, 'Surge Mare');
+insert into t_deck_card values(6, 2, 'Deep Freeze');
+insert into t_deck_card values(6, 1, 'Jace, Cunning Castaway');
+
+insert into t_deck_card values(7, 3, 'Absorb');
+insert into t_deck_card values(7, 3, 'Cast Down');
+insert into t_deck_card values(7, 3, 'Chemister\'s Insight');
+insert into t_deck_card values(7, 2, 'Cry of the Carnarium');
+insert into t_deck_card values(7, 4, 'Drowned Catacomb');
+insert into t_deck_card values(7, 4, 'Glacial Fortress');
+insert into t_deck_card values(7, 4, 'Godless Shrine');
+insert into t_deck_card values(7, 4, 'Hallowed Fountain');
+insert into t_deck_card values(7, 1, 'Island');
+insert into t_deck_card values(7, 4, 'Isolated Chapel');
+insert into t_deck_card values(7, 3, 'Kaya\'s Wrath');
+insert into t_deck_card values(7, 1, 'Kaya, Orzhov Usurper');
+insert into t_deck_card values(7, 2, 'Moment of Craving');
+insert into t_deck_card values(7, 3, 'Mortify');
+insert into t_deck_card values(7, 2, 'Negate');
+insert into t_deck_card values(7, 2, 'Search for Azcanta');
+insert into t_deck_card values(7, 1, 'Swamp');
+insert into t_deck_card values(7, 4, 'Teferi, Hero of Dominaria');
+insert into t_deck_card values(7, 4, 'Thought Erasure');
+insert into t_deck_card values(7, 2, 'Vraska\'s Contempt');
+insert into t_deck_card values(7, 4, 'Watery Grave');
+insert into t_deck_card values(7, 3, 'Basilica Bell-Haunt');
+insert into t_deck_card values(7, 3, 'Duress');
+insert into t_deck_card values(7, 2, 'Hostage Taker');
+insert into t_deck_card values(7, 1, 'Lyra Dawnbringer');
+insert into t_deck_card values(7, 1, 'The Eldest Reborn');
+insert into t_deck_card values(7, 3, 'Thief of Sanity');
+insert into t_deck_card values(7, 2, 'Unmoored Ego');
+
 # t_tournament
 INSERT INTO t_tournament VALUES ('Sample Tournament', DATE '2019-03-18', 'Boston', 'MA', 'USA');
 INSERT INTO t_tournament VALUES ('2019 Mythic Championship', DATE '2019-02-24', 'Cleveland', 'OH', 'USA');
 
 # t_match 
-# Needs to be added
 INSERT INTO t_match VALUES (111, 1, '3-1', 'Luis Scott-Vargas', '2019 Mythic Championship');
 INSERT INTO t_match VALUES (112, 1, '3-2', 'Yoshihiko Ikawa', '2019 Mythic Championship');
 INSERT INTO t_match VALUES (113, 1, '3-1', 'Autumn Burchett', '2019 Mythic Championship');
@@ -544,6 +742,30 @@ INSERT INTO t_match VALUES (114, 1, '3-2', 'Reid Duke', '2019 Mythic Championshi
 INSERT INTO t_match VALUES (121, 2, '3-1', 'Yoshihiko Ikawa', '2019 Mythic Championship');
 INSERT INTO t_match VALUES (122, 2, '3-1', 'Autumn Burchett', '2019 Mythic Championship');
 INSERT INTO t_match VALUES (131, 3, '3-2', 'Autumn Burchett', '2019 Mythic Championship');
+/*Round One*/
+insert into t_match values(11, 1, '3-1', 'John Wheeler', 'Sample Tournament');
+insert into t_match values(12, 1, '3-0', 'Reid Duke', 'Sample Tournament');
+insert into t_match values(13, 1, '3-2', 'Kleanthis Zymaris', 'Sample Tournament');
+insert into t_match values(14, 1, '3-1', 'Jeff Hoogland', 'Sample Tournament');
+/*Losers One*/
+insert into t_match values(15, 2, '3-1', 'Autumn Burchett', 'Sample Tournament');
+insert into t_match values(16, 2, '3-0', 'Reid Duke', 'Sample Tournament');
+/*Round Two*/
+insert into t_match values(21, 2, '3-1', 'John Wheeler', 'Sample Tournament');
+insert into t_match values(22, 2, '3-0', 'Jeff Hoogland', 'Sample Tournament');
+/*Losers Two*/
+insert into t_match values(23, 3, '3-1', 'Kleanthis Zymaris', 'Sample Tournament');
+insert into t_match values(24, 2, '3-1', 'Autumn Burchett', 'Sample Tournament');
+/*Semis*/
+insert into t_match values(31, 3, '3-2', 'Jeff Hoogland', 'Sample Tournament');
+/*Losers Three*/
+insert into t_match values(32, 3, '3-2', 'Reid Duke', 'Sample Tournament');
+/*Losers Four*/
+insert into t_match values(41, 4, '3-0', 'John Wheeler', 'Sample Tournament');
+/*Finals*/
+insert into t_match values(51, 5, '3-2', 'John Wheeler', 'Sample Tournament');
+/*Finals 2*/
+insert into t_match values(61, 3, '3-1', 'Jeff Hoogland', 'Sample Tournament');
 
 # t_player_match
 INSERT INTO t_player_match VALUES ('Marcio Carvalho', 111);
@@ -560,8 +782,46 @@ INSERT INTO t_player_match VALUES ('Autumn Burchett', 122);
 INSERT INTO t_player_match VALUES ('Reid Duke', 122);
 INSERT INTO t_player_match VALUES ('Yoshihiko Ikawa', 131);
 INSERT INTO t_player_match VALUES ('Autumn Burchett', 131);
+insert into t_player_match values('John Wheeler',11);
+insert into t_player_match values('Kenji Egashira',11);
+insert into t_player_match values('Reid Duke',12);
+insert into t_player_match values('Autumn Burchett',12);
+insert into t_player_match values('Kleanthis Zymaris',13);
+insert into t_player_match values('Luis Scott-Vargas',13);
+insert into t_player_match values('Cassius Marsh',14);
+insert into t_player_match values('Jeff Hoogland',14);
+insert into t_player_match values('Kenji Egashira',15);
+insert into t_player_match values('Autumn Burchett',15);
+insert into t_player_match values('Luis Scott-Vargas',16);
+insert into t_player_match values('Cassius Marsh',16);
+insert into t_player_match values('John Wheeler',21);
+insert into t_player_match values('Reid Duke',21);
+insert into t_player_match values('Kleanthis Zymaris',22);
+insert into t_player_match values('Jeff Hoogland',22);
+insert into t_player_match values('Kleanthis Zymaris',23);
+insert into t_player_match values('Autumn Burchett',23);
+insert into t_player_match values('Reid Duke',24);
+insert into t_player_match values('Luis Scott-Vargas',24);
+insert into t_player_match values('John Wheeler',31);
+insert into t_player_match values('Jeff Hoogland',31);
+insert into t_player_match values('Kleanthis Zymaris',32);
+insert into t_player_match values('Luis Scott-Vargas',32);
+insert into t_player_match values('John Wheeler',41);
+insert into t_player_match values('Luis Scott-Vargas',41);
+insert into t_player_match values('Jeff Hoogland',51);
+insert into t_player_match values('John Wheeler',51);
+insert into t_player_match values('John Wheeler',61);
+insert into t_player_match values('Jeff Hoogland',61);
 
 # t_deck_format
+insert into t_deck_format values('0', 'Standard');
+insert into t_deck_format values('1', 'Standard');
+insert into t_deck_format values('2', 'Standard');
+insert into t_deck_format values('3', 'Standard');
+insert into t_deck_format values('4', 'Standard');
+insert into t_deck_format values('5', 'Standard');
+insert into t_deck_format values('6', 'Standard');
+insert into t_deck_format values('7', 'Standard');
 INSERT INTO t_deck_format VALUES (8, 'Standard');
 INSERT INTO t_deck_format VALUES (9, 'Standard');
 INSERT INTO t_deck_format VALUES (10, 'Standard');
@@ -590,8 +850,17 @@ INSERT INTO t_tournament_deck VALUES ('Sample Tournament', 7);
 
 # t_tournament_format
 INSERT INTO t_tournament_format VALUES ('2019 Mythic Championship', 'Standard');
+insert into t_tournament_format values('Sample Tournament', 'Standard');
 
 # t_tournament_player
+insert into t_tournament_player values('Sample Tournament', 'John Wheeler', 4, 2, 15, 8);
+insert into t_tournament_player values('Sample Tournament', 'Cassius Marsh', 0, 2, 1, 6);
+insert into t_tournament_player values('Sample Tournament', 'Jeff Hoogland', 4, 1, 14, 7);
+insert into t_tournament_player values('Sample Tournament', 'Kenji Egashira', 0, 2, 2, 6);
+insert into t_tournament_player values('Sample Tournament', 'Kleanthis Zymaris', 2, 2, 8, 6);
+insert into t_tournament_player values('Sample Tournament', 'Luis Scott-Vargas', 3, 2, 11, 8);
+insert into t_tournament_player values('Sample Tournament', 'Autumn Burchett', 1, 2, 4, 7);
+insert into t_tournament_player values('Sample Tournament', 'Reid Duke', 1, 2, 4, 6);
 INSERT INTO t_tournament_player VALUES ('2019 Mythic Championship', 'Marcio Carvalho', 0, 1, 1, 3);
 INSERT INTO t_tournament_player VALUES ('2019 Mythic Championship', 'Luis Scott-Vargas', 1 , 1, 4, 4);
 INSERT INTO t_tournament_player VALUES ('2019 Mythic Championship', 'Yoshihiko Ikawa', 2, 1, 8, 6);
@@ -600,3 +869,44 @@ INSERT INTO t_tournament_player VALUES ('2019 Mythic Championship', 'Autumn Burc
 INSERT INTO t_tournament_player VALUES ('2019 Mythic Championship', 'Julien Berteaux', 0, 1, 1, 3);
 INSERT INTO t_tournament_player VALUES ('2019 Mythic Championship', 'Reid Duke', 1, 1, 4, 5);
 INSERT INTO t_tournament_player VALUES ('2019 Mythic Championship', 'Alex Majlaton', 0, 1, 2, 3);
+
+# t_format
+insert into t_format values ('Standard', 1);
+insert into t_format values('Modern', 1);
+insert into t_format values('Legacy', 1);
+insert into t_format values('Vintage', 1);
+insert into t_format values('Commander', 1);
+insert into t_format values('Sealed', 0);
+insert into t_format values('Draft', 0);
+
+# t_player
+insert into t_player values('John Wheeler', 'TAG');
+insert into t_player values('Cassius Marsh', 'San Francisco 49ers');
+insert into t_player values('Jeff Hoogland', 'Tempo Storm');
+insert into t_player values('Kenji Egashira', 'Team Solo Mid');
+insert into t_player values('Kleanthis Zymaris', 'TAG');
+insert into t_player values('Luis Scott-Vargas', 'Channel Fireball');
+insert into t_player values('Autumn Burchett');
+insert into t_player values('Reid Duke', 'Channel Fireball');
+insert into t_player values('Marcio Carvalho',null);
+insert into t_player values('Yoshihiko Ikawa',null);
+insert into t_player values('Michael Bonde', 'Snapcardster');
+insert into t_player values('Julien Berteaux',null);
+insert into t_player values('Alex Majlaton',null);
+
+# t_player_deck
+insert into t_player_deck values('John Wheeler', 0);
+insert into t_player_deck values('Cassius Marsh', 1);
+insert into t_player_deck values('Jeff Hoogland', 2);
+insert into t_player_deck values('Kenji Egashira', 3);
+insert into t_player_deck values('Kleanthis Zymaris', 4);
+insert into t_player_deck values('Luis Scott-Vargas', 5);
+insert into t_player_deck values('Autumn Burchett', 6);
+insert into t_player_deck values('Reid Duke', 7);
+insert into t_player_deck values('Luis Scott-Vargas', 14);
+insert into t_player_deck values('Reid Duke', 12);
+insert into t_player_deck values('Marcio Carvalho', 8);
+insert into t_player_deck values('Yoshihiko Ikawa', 10);
+insert into t_player_deck values('Michael Bonde', 11);
+insert into t_player_deck values('Julien Berteaux', 9);
+insert into t_player_deck values('Alex Majlaton', 13);
