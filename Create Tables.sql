@@ -9,6 +9,7 @@ Drop table if exists t_tournament;
 Drop table if exists t_tournament_format;
 Drop table if exists t_tournament_player;
 Drop table if exists t_player_match;
+Drop table if exists t_tournament_deck;
 Drop table if exists t_player_deck;
 Drop table if exists t_deck_format;
 Drop table if exists t_deck_card;
@@ -17,7 +18,7 @@ Drop table if exists t_set_format;
 
 
 Create Table t_tournament(
-tournament_name varchar(20) not null,
+tournament_name varchar(30) not null,
 date Date Not null,
 city varchar(20) not null,
 state varchar(2) not null,
@@ -62,7 +63,7 @@ match_id int not null,
 round_number int not null,
 results varchar(20) not null,
 match_winner varchar(20) not null,
-tournament_name varchar(20) not null,
+tournament_name varchar(30) not null,
 Constraint match_pk Primary Key (match_id),
 Constraint tournament_fk Foreign Key (tournament_name) References t_tournament(tournament_name)
 );
@@ -81,7 +82,7 @@ Constraint deck_pk Primary Key (deck_id)
 )
 
 Create Table t_tournament_format(
-tournament_name varchar(20) not null,
+tournament_name varchar(30) not null,
 format_name varchar(20) not null,
 Constraint tf_pk Primary Key (tournament_name, format_name),
 Constraint tournament_fk foreign key (tournament_name) references t_tournament(tournament_name),
@@ -89,7 +90,7 @@ Constraint format_fk foreign key (format_name) references t_format(format_name)
 );
 
 Create Table t_tournament_player(
-tournament_name varchar(20) not null,
+tournament_name varchar(30) not null,
 player_name varchar(20) not null,
 match_wins int not null,
 match_losses int not null,
@@ -98,6 +99,14 @@ game_losses int not null,
 Constraint tp_pk Primary Key (tournament_name, player_name),
 Constraint tournament_fk foreign key (tournament_name) references t_tournament(tournament_name),
 Constraint player_fk foreign key (player_name) references t_player(player_name)
+);
+
+Create Table t_tournament_deck(
+tournament_name varchar(30) not null,
+deck_id int not null,
+Constraint td_pk Primary Key (tournament_name, deck_id),
+Constraint player_fk foreign key (tournament_name) references t_tournament(tournament_name),
+Constraint deck_fk foreign key (deck_id) references t_deck(deck_id)
 );
 
 Create table t_player_match(

@@ -530,3 +530,73 @@ INSERT INTO t_deck_card VALUES (14, 1, 'Murmuring Mystic');
 INSERT INTO t_deck_card VALUES (14, 1, 'Shivan Fire');
 INSERT INTO t_deck_card VALUES (14, 3, 'Negate');
 INSERT INTO t_deck_card VALUES (14, 1, 'Disdainful Stroke');
+
+# t_tournament
+INSERT INTO t_tournament VALUES ('Sample Tournament', DATE '2019-03-18', 'Boston', 'MA', 'USA');
+INSERT INTO t_tournament VALUES ('2019 Mythic Championship', DATE '2019-02-24', 'Cleveland', 'OH', 'USA');
+
+# t_match 
+# Needs to be added
+INSERT INTO t_match VALUES (111, 1, '3-1', 'Luis Scott-Vargas', '2019 Mythic Championship');
+INSERT INTO t_match VALUES (112, 1, '3-2', 'Yoshihiko Ikawa', '2019 Mythic Championship');
+INSERT INTO t_match VALUES (113, 1, '3-1', 'Autumn Burchett', '2019 Mythic Championship');
+INSERT INTO t_match VALUES (114, 1, '3-2', 'Reid Duke', '2019 Mythic Championship');
+INSERT INTO t_match VALUES (121, 2, '3-1', 'Yoshihiko Ikawa', '2019 Mythic Championship');
+INSERT INTO t_match VALUES (122, 2, '3-1', 'Autumn Burchett', '2019 Mythic Championship');
+INSERT INTO t_match VALUES (131, 3, '3-2', 'Autumn Burchett', '2019 Mythic Championship');
+
+# t_player_match
+INSERT INTO t_player_match VALUES ('Marcio Carvalho', 111);
+INSERT INTO t_player_match VALUES ('Luis Scott-Vargas', 111);
+INSERT INTO t_player_match VALUES ('Yoshihiko Ikawa', 112);
+INSERT INTO t_player_match VALUES ('Michael Bonde', 112);
+INSERT INTO t_player_match VALUES ('Autumn Burchett', 113);
+INSERT INTO t_player_match VALUES ('Julien Berteaux', 113);
+INSERT INTO t_player_match VALUES ('Reid Duke', 114);
+INSERT INTO t_player_match VALUES ('Alex Majlaton', 114);
+INSERT INTO t_player_match VALUES ('Luis Scott-Vargas', 121);
+INSERT INTO t_player_match VALUES ('Yoshihiko Ikawa', 121);
+INSERT INTO t_player_match VALUES ('Autumn Burchett', 122);
+INSERT INTO t_player_match VALUES ('Reid Duke', 122);
+INSERT INTO t_player_match VALUES ('Yoshihiko Ikawa', 131);
+INSERT INTO t_player_match VALUES ('Autumn Burchett', 131);
+
+# t_deck_format
+INSERT INTO t_deck_format VALUES (8, 'Standard');
+INSERT INTO t_deck_format VALUES (9, 'Standard');
+INSERT INTO t_deck_format VALUES (10, 'Standard');
+INSERT INTO t_deck_format VALUES (11, 'Standard');
+INSERT INTO t_deck_format VALUES (12, 'Standard');
+INSERT INTO t_deck_format VALUES (13, 'Standard');
+INSERT INTO t_deck_format VALUES (14, 'Standard');
+
+# t_tournament_deck
+INSERT INTO t_tournament_deck VALUES ('2019 Mythic Championship', 6);
+INSERT INTO t_tournament_deck VALUES ('2019 Mythic Championship', 8);
+INSERT INTO t_tournament_deck VALUES ('2019 Mythic Championship', 9);
+INSERT INTO t_tournament_deck VALUES ('2019 Mythic Championship', 10);
+INSERT INTO t_tournament_deck VALUES ('2019 Mythic Championship', 11);
+INSERT INTO t_tournament_deck VALUES ('2019 Mythic Championship', 12);
+INSERT INTO t_tournament_deck VALUES ('2019 Mythic Championship', 13);
+INSERT INTO t_tournament_deck VALUES ('2019 Mythic Championship', 14);
+INSERT INTO t_tournament_deck VALUES ('Sample Tournament', 0);
+INSERT INTO t_tournament_deck VALUES ('Sample Tournament', 1);
+INSERT INTO t_tournament_deck VALUES ('Sample Tournament', 2);
+INSERT INTO t_tournament_deck VALUES ('Sample Tournament', 3);
+INSERT INTO t_tournament_deck VALUES ('Sample Tournament', 4);
+INSERT INTO t_tournament_deck VALUES ('Sample Tournament', 5);
+INSERT INTO t_tournament_deck VALUES ('Sample Tournament', 6);
+INSERT INTO t_tournament_deck VALUES ('Sample Tournament', 7);
+
+# t_tournament_format
+INSERT INTO t_tournament_format VALUES ('2019 Mythic Championship', 'Standard');
+
+# t_tournament_player
+INSERT INTO t_tournament_player VALUES ('2019 Mythic Championship', 'Marcio Carvalho', 0, 1, 1, 3);
+INSERT INTO t_tournament_player VALUES ('2019 Mythic Championship', 'Luis Scott-Vargas', 1 , 1, 4, 4);
+INSERT INTO t_tournament_player VALUES ('2019 Mythic Championship', 'Yoshihiko Ikawa', 2, 1, 8, 6);
+INSERT INTO t_tournament_player VALUES ('2019 Mythic Championship', 'Michael Bonde', 0, 1, 2, 3);
+INSERT INTO t_tournament_player VALUES ('2019 Mythic Championship', 'Autumn Burchett', 3, 1, 9, 4);
+INSERT INTO t_tournament_player VALUES ('2019 Mythic Championship', 'Julien Berteaux', 0, 1, 1, 3);
+INSERT INTO t_tournament_player VALUES ('2019 Mythic Championship', 'Reid Duke', 1, 1, 4, 5);
+INSERT INTO t_tournament_player VALUES ('2019 Mythic Championship', 'Alex Majlaton', 0, 1, 2, 3);
